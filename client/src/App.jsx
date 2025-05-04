@@ -4,6 +4,7 @@ import dashboardImage from './assets/dashboard.png';
 import sqlImage from './assets/sql.png';
 import foodAppImage from './assets/foodApp.png';
 import fireDept from './assets/fire.png'
+import resumeImg from './assets/resume.png'
 import { FaGithub, FaLinkedin, FaPhoneAlt, FaEnvelope , FaLink , FaFileAlt } from 'react-icons/fa';
 import { FaPython, FaJsSquare, FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiTensorflow, SiNumpy, SiPandas, SiMongodb, SiSqlite, SiExpress } from 'react-icons/si';
@@ -100,7 +101,7 @@ export default function Portfolio() {
           onClick={handleImageClick} // Close the image when clicked
         >
           <img
-            src={fireDept}
+            src={resumeImg}
             alt="Resume Fullscreen"
             className="transition-all duration-300 ease-in-out max-w-full max-h-full object-contain"
             style={{ cursor: 'pointer' }}
