@@ -49,14 +49,14 @@ export default function Portfolio() {
               <span className='flex items-center mb-2 text-teal-500 hover:text-green-500 text-3xl'>Hii I'm Sumit Tank</span>
               <div className="flex items-center mb-2 hover:text-green-500">
                 <FaGithub className="text-lg mr-2" />
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"
+                <a href="https://github.com/sumittank" target="_blank" rel="noopener noreferrer"
                    className="hover:text-green-500 text-sm break-all">
                   github.com/sumittank
                 </a>
               </div>
               <div className="flex items-center mb-2 hover:text-green-500">
                 <FaLinkedin className="text-lg mr-2" />
-                <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.linkedin.com/in/sumit-tank-7ba356289" target="_blank" rel="noopener noreferrer"
                    className="hover:text-green-500 text-sm break-all">
                   www.linkedin.com/in/sumit-tank-7ba356289
                 </a>
