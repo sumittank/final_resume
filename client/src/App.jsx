@@ -68,7 +68,7 @@ export default function Portfolio() {
               </div>
               <div className="flex items-center mb-2 hover:text-green-500">
                 <FaEnvelope className="text-lg mr-2" />
-                <span className="text-sm break-all">work.sumittank77756@gmail.com</span>
+                <span className="text-sm break-all">sumittank77756@gmail.com</span>
               </div>
               {/* <div className="flex items-center mb-2 hover:text-green-500">
                 <FaFileAlt className="text-lg mr-2" />
