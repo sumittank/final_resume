@@ -183,7 +183,7 @@ export default function Portfolio() {
             description: 'A platform for students to run SQL queries with a real-time database interface.',
             image: sqlImage,
             techStack: ['SQL', 'React', 'Node.js', 'Express'],
-            liveLink: 'https://example.com/sql-project',
+            liveLink: 'https://run-sql-query-last.netlify.app',
           },
           {
             title: 'Food App',
@@ -202,10 +202,10 @@ export default function Portfolio() {
                     <span key={tech} className="bg-[#333] text-white text-xs px-2 py-1 rounded">{tech}</span>
                   ))}
                 </div>
-                {project.image === foodAppImage && <a href={project.liveLink} target="_blank" rel="noopener noreferrer"
+                <a href={project.liveLink} target="_blank" rel="noopener noreferrer"
                    className="text-green-400 hover:underline text-sm">
                   Live Demo
-                </a>}
+                </a>
               </div>
             </div>
           ))}
