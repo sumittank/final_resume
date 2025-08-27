@@ -391,34 +391,34 @@ import nptelCert from "./assets/nptelpython.png";
 import ciscoCert from "./assets/Ciscodatascience.png";
 import drawingIntermediateCert from "./assets/Inter.jpg";
 import drawingElementaryCert from "./assets/Element.jpg";
+import profileImage from "./assets/sumit_professional_photo.jpg";
 
 const Hero = () => {
   return (
-    <><section
-      className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
-      style={{
+    <>
+    <section
+  className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
+  style={{
         backgroundImage: `linear-gradient(rgba(34, 40, 49, 0.85), rgba(34, 40, 49, 0.85)), url(${heroImage})`,
       }}
-    >
-      <div className="container mx-auto px-4 text-center z-10">
-        <div className="max-w-4xl mx-auto">
-          {/* Name */}
-          <h1 className="text-5xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent animate-pulse">
-            Sumit Tank
-          </h1>
+>
+  <div className="container mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
+    {/* Left Content */}
+    <div className="text-center md:text-left space-y-6">
+      <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
+        <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent animate-pulse">
+          Hello, I'm Sumit!
+        </span>
+      </h1>
 
-          {/* Subtitle */}
-          <h2 className="text-2xl md:text-3xl font-semibold text-cyan-400 mb-4">
-            Engineering Student
-          </h2>
+      <h2 className="text-xl md:text-2xl font-semibold text-cyan-400">
+        Engineering Student | Web Dev | Machine Learning
+      </h2>
 
-          {/* Description */}
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            AITR Indore • Web Development • Machine Learning • Innovation
-          </p>
-
-          {/* Contact Links */}
-          <div className="flex flex-wrap justify-center gap-6 mb-8">
+      <p className="text-lg text-gray-300 max-w-xl mx-auto md:mx-0">
+        AITR Indore • Passion for building scalable web apps & exploring AI innovations
+      </p>
+      <div className="flex flex-wrap gap-6 mb-8">
             <a
               href="https://github.com/sumittank"
               target="_blank"
@@ -447,18 +447,51 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Button */}
-          {/* <button className="bg-cyan-500 text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(0,195,255,0.9)] transition-all text-lg font-semibold">
-            View My Work
-          </button> */}
-          <button
-  onClick={() => window.scrollBy({ top: 600, behavior: 'smooth' })}
-  className="bg-cyan-500 text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-[0_0_25px_rgba(0,195,255,0.9)] transition-all text-lg font-semibold"
-><span>Scroll</span>
-</button>
-        </div>
-      </div>
-    </section>
+      <button
+        onClick={() =>
+          window.scrollBy({ top: 600, behavior: "smooth" })
+        }
+        className="inline-block bg-cyan-500 text-white px-6 py-3 rounded-xl shadow-lg 
+        hover:shadow-[0_0_25px_rgba(0,195,255,0.9)] transition-all text-lg font-semibold"
+      >
+        About Me
+      </button>
+    </div>
+
+    {/* Right Profile Image with Floating Animation */}
+    {/* <div className="flex justify-center md:justify-end">
+      <img
+        src="/profile.jpg" // replace with your imported image
+        alt="Profile"
+        className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-full border-4 border-cyan-400 shadow-lg animate-[float_4s_ease-in-out_infinite]"
+      />
+    </div> */}
+<div className="flex justify-center md:justify-end">
+  <img
+    src= {profileImage}
+    alt="Profile"
+    className="
+      w-72 h-72 md:w-96 md:h-96 object-cover rounded-full border-4 border-cyan-400 shadow-lg
+      animate-[wiggle_4s_ease-in-out_infinite] hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-400/75
+                             transform transition duration-300 hover:scale-105
+    "
+  />
+</div>
+
+<style>
+{`
+  @keyframes wiggle {
+    0%, 100% { transform: translateY(0px); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(-20px); }
+    75% { transform: translateY(-10px); }
+  }
+`}
+</style>
+
+  </div>
+</section>
+
         <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
