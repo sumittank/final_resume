@@ -227,9 +227,9 @@ export default function About() {
           {/* Content */}
           <div className={`reveal ${visible ? 'visible' : ''}`} style={{ transitionDelay: '0.4s' }}>
             <p className="text-white/50 text-lg leading-8 mb-8">
-              Final-year Computer Science undergraduate with{' '}
-              <span className="text-neural font-medium">4 months of backend internship</span>{' '}
-              experience at Digivalet, Indore. Proficient in{' '}
+              Computer Science undergraduate with{' '}
+              {/* <span className="text-neural font-medium">4 months of backend internship</span>{' '} */}
+              {/* experience at Digivalet, Indore. Proficient in{' '} */}
               <span className="text-neural font-medium">Python, Django, and REST APIs</span>,
               with hands-on containerization using{' '}
               <span className="text-neural font-medium">Docker</span>.
@@ -254,7 +254,7 @@ export default function About() {
                 {[
                   { cmd: 'whoami', out: 'Sumit Tank — Backend Developer' },
                   { cmd: 'skills --top', out: 'Python · Django · Docker · REST · MERN' },
-                  { cmd: 'status --current', out: 'Interning @ Digivalet · Jan 2026–Present' },
+                  // { cmd: 'status --current', out: 'Interning @ Digivalet · Jan 2026–Present' },
                   { cmd: 'goal', out: 'Build systems that scale beyond limits' },
                 ].map(({ cmd, out }) => (
                   <div key={cmd} className="mb-3 last:mb-0">

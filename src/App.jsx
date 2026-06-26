@@ -1072,7 +1072,7 @@ export default function App() {
         <MarqueeTicker color="neural" />
         <About />
         <MarqueeTicker color="plasma" />
-        <Experience />
+        {/* <Experience /> */}
         <Projects />
         <MarqueeTicker color="neural" />
         <Skills />

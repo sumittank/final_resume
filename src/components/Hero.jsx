@@ -166,7 +166,7 @@ export default function Hero() {
           className={`inline-flex items-center gap-2 mb-8 px-4 py-2 border border-neural/20 font-mono text-xs text-white/40 tracking-widest uppercase transition-all duration-1000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
         >
           <span className="w-1 h-1 rounded-full bg-neural" />
-          Final-Year CS Undergraduate · Indore, M.P.
+          CS Undergraduate · Indore, M.P.
           <span className="w-1 h-1 rounded-full bg-neural" />
         </div>
 
@@ -260,11 +260,12 @@ export default function Hero() {
           className={`grid grid-cols-2 md:grid-cols-5 gap-3 max-w-3xl mx-auto transition-all duration-1000 delay-1000 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
         >
           {[
-            { value: '4mo+', label: 'Internship' },
+            // { value: '4mo+', label: 'Internship' },
             { value: '3+', label: 'Deployed Projects' },
             { value: 'AI', label: 'Artificial Intelligence' },
             { value: 'MERN+', label: 'Full Stack' },
             { value: 'Python', label: 'Backend Development' },
+            { value: 'DB', label: 'MySQL & MongoDB' },
           ].map(({ value, label }) => (
             <div
               key={label}
